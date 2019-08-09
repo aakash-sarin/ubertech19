@@ -67,6 +67,7 @@ html {
     html {
         font-size: 9.411764705882353px;
     }
+    
 }
 
 html, body {
@@ -2518,10 +2519,9 @@ html.no-csstransitions .home-content__main {
     transition: 0.4s;
   }
 
- .arrow{
-        
-        margin-left: 50%;
-  }
+ #arrow{
+     display: inline-block;
+ }
 
   .accordion:hover{
       background-color: white !important;
@@ -2759,6 +2759,21 @@ html.no-csstransitions .home-content__main {
     .item-folio__title, .item-folio__cat {
         font-size: 1.3rem;
     }
+    .accordion {
+        background-color:rgba(0, 0, 0, 0)!important;
+        border: 1px solid white !important;
+        padding-bottom: 6% !important;
+        color:white !important;
+        font-family: "Ubuntu", serif;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+      }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2778,6 +2793,21 @@ html.no-csstransitions .home-content__main {
     .item-folio__title, .item-folio__cat {
         font-size: 1.4rem;
     }
+    .accordion {
+        background-color:rgba(0, 0, 0, 0)!important;
+        border: 1px solid white !important;
+        padding-bottom: 6% !important;
+        color:white !important;
+        font-family: "Ubuntu", serif;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+      }
 }
 
 
