@@ -376,6 +376,84 @@ window.onclick = function(event) {
   }
 }
 
+// Get the modal
+var modal15 = document.getElementById("myModal15");
+
+// Get the button that opens the modal
+var btn15 = document.getElementById("myBtn15");
+
+// Get the <span> element that closes the modal
+var span15 = document.getElementsByClassName("close15")[0];
+
+// When the user clicks on the button, open the modal 
+btn15.onclick = function() {
+  modal15.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span15.onclick = function() {
+  modal15.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal15) {
+    modal15.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal16 = document.getElementById("myModal16");
+
+// Get the button that opens the modal
+var btn16 = document.getElementById("myBtn16");
+
+// Get the <span> element that closes the modal
+var span16 = document.getElementsByClassName("close16")[0];
+
+// When the user clicks on the button, open the modal 
+btn16.onclick = function() {
+  modal16.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span16.onclick = function() {
+  modal16.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal16) {
+    modal16.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal17 = document.getElementById("myModal17");
+
+// Get the button that opens the modal
+var btn17 = document.getElementById("myBtn17");
+
+// Get the <span> element that closes the modal
+var span17 = document.getElementsByClassName("close17")[0];
+
+// When the user clicks on the button, open the modal 
+btn17.onclick = function() {
+  modal17.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span17.onclick = function() {
+  modal17.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal17) {
+    modal17.style.display = "none";
+  }
+}
+
 
 
 var acc = document.getElementsByClassName("accordion");
