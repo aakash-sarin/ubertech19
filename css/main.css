@@ -82,33 +82,31 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 100; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: auto;
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+/* Modal Content (image) */
 .modal-content {
-  background-color: black;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; 
-  height: 40%;
-  border-radius: 10px;
-  color: white !important;/* Could be more or less, depending on screen size */
+  margin: auto;
+  display: block;
+    padding: 0px 10px; 
+  width: 100%;
+    height: 100%;
+  max-width: 700px;
 }
-
 /* The Close Button */
 .closeBtn {
     display: inline-block;
   color: #aaa;
-  float: right;
+  float: left;
   font-size: 28px;
   font-weight: bold;
 }
@@ -2564,6 +2562,11 @@ html.no-csstransitions .home-content__main {
     }
 }
 
+.desc {
+    text-align: center;
+    font-size: 30px;
+}
+
 
 
 /* ===================================================================
@@ -2575,6 +2578,7 @@ html.no-csstransitions .home-content__main {
 */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    position: relative;
     background-color:rgba(0, 0, 0, 0)!important;
     border: 1px solid white !important;
     padding-bottom: 6% !important;
@@ -2582,7 +2586,7 @@ html.no-csstransitions .home-content__main {
     font-family: "Ubuntu", serif;
     border-radius: 5px;
     cursor: pointer;
-    padding: 18px;
+    padding: 8px;
     width: 100%;
     text-align: left;
     border: none;
@@ -2590,8 +2594,11 @@ html.no-csstransitions .home-content__main {
     transition: 0.4s;
   }
 
- #arrow{
+ #arrow , .arrow{
+     position: relative;
      display: inline-block;
+     float: right;
+     top: 0px;
  }
 
   .accordion:hover{
@@ -2640,6 +2647,14 @@ html.no-csstransitions .home-content__main {
 /* -------------------------------------------------------------------
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
+
+
+.space {
+    position: relative;
+    padding: 10px;
+/*    margin: 100px;*/
+}
+
 .masonry:after {
     content: "";
     display: table;
@@ -2652,7 +2667,7 @@ html.no-csstransitions .home-content__main {
 
 .masonry__brick {
     float: left;
-    padding: 0;
+    padding-bottom: 0px;
 }
 
 .item-folio {
