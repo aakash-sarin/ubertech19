@@ -8,6 +8,43 @@
 
  /*pop*/
 
+ //yahan se
+
+// Get the modal
+var modalPop = document.getElementById("Modal");
+
+// Get the button that opens the modalPop
+var btnPop = document.getElementById("Btn-pop");
+
+// Get the <span> element that closes the modalPop
+var spanPop = document.getElementsByClassName("cross")[0];
+
+// When the user clicks on the button, open the modalPop 
+btnPop.onclick = function() {
+  modalPop.style.display = "block";
+}
+
+// When the user clicks on <spanPop> (x), cross the modalPop
+spanPop.onclick = function() {
+  modalPop.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modalPop, cross it
+window.onclick = function(event) {
+  if (event.target == modalPop) {
+    modalPop.style.display = "none";
+  }
+}
+
+//Yahan tak
+
+
+
+
+
+
+
+
  // Get the modal
 var modal = document.getElementById("myModal");
 
